@@ -44,20 +44,14 @@ th{background:#f0fdf4}
 </div>
 
 <div class="format">
-<h3>🔍 USN Search Format</h3>
-<p>Enter only the last 2 or 3 digits of the USN, or enter the full USN.</p>
-<table>
-<tr><th>Official USN</th><th>Enter</th></tr>
-<tr><td>2BL25BA001</td><td><b>001</b> or <b>01</b></td></tr>
-<tr><td>2BL25BA012</td><td><b>012</b> or <b>12</b></td></tr>
-<tr><td>2BL25BA030</td><td><b>030</b> or <b>30</b></td></tr>
-<tr><td>2BL25BA047</td><td><b>047</b> or <b>47</b></td></tr>
-</table>
-<p><b>Example:</b> 2BL25BA047 → Enter <b>047</b> or <b>47</b></p>
+<h3>🔍 ENTER LAST 2 DIGITS ONLY</h3>
+<p>Enter only the last 2 digits of the USN.</p>
+<p><b>Example:</b> 2BL25BA047 → Enter <b>47</b></p>
+<p>Search accepts values from <b>01 to 30</b>.</p>
 </div>
 
 <div class="search">
-<input id="q" inputmode="numeric" placeholder="Enter 047 or 47" onkeydown="if(event.key==='Enter')findStudent()">
+<input id="q" inputmode="numeric" placeholder="ENTER LAST 2 DIGITS ONLY (e.g. 47)" onkeydown="if(event.key==='Enter')findStudent()">
 <button onclick="findStudent()">Search</button>
 </div>
 <div id="out" class="muted">Enter your USN number to view the result.</div>
