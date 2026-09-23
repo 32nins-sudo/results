@@ -1,1 +1,68 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RESULTS 2 SEM ONLY</title><style>body{font-family:Arial,sans-serif;background:#f3f4f6;margin:0;color:#111827}.wrap{max-width:820px;margin:32px auto;padding:18px}.card{background:#fff;border-radius:18px;padding:24px;box-shadow:0 8px 24px #00000012}.head{background:#166534;color:#fff;border-radius:14px;padding:22px;text-align:center}.search{display:flex;gap:10px;margin:20px 0}.search input{flex:1;padding:13px;border:1px solid #d1d5db;border-radius:10px;font-size:16px}.search button{padding:13px 20px;border:0;border-radius:10px;background:#166534;color:#fff;font-weight:700;cursor:pointer}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.stat{background:#f8fafc;border-radius:12px;padding:15px;text-align:center}.stat b{display:block;font-size:24px;margin-bottom:5px}table{width:100%;border-collapse:collapse;margin-top:18px}th,td{padding:11px;border-bottom:1px solid #e5e7eb;text-align:center}th{background:#f0fdf4}.muted{color:#6b7280}.err{text-align:center;color:#b91c1c;font-weight:700}@media(max-width:600px){.search{flex-direction:column}.grid{grid-template-columns:1fr}.wrap{margin:10px auto}} </style></head><body><div class="wrap"><div class="card"><div class="head"><h1>RESULTS 2 SEM ONLY</h1><p>MBA Semester 2 Student Result Portal</p></div><div class="search"><input id="q" inputmode="numeric" placeholder="Enter 01–30 or full USN" onkeydown="if(event.key==='Enter')findStudent()"><button onclick="findStudent()">Search</button></div><div id="out" class="muted">Enter your USN number to view the result.</div></div></div><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RESULTS 2 SEM ONLY</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f3f4f6;margin:0;color:#111827}
+.wrap{max-width:820px;margin:32px auto;padding:18px}
+.card{background:#fff;border-radius:18px;padding:24px;box-shadow:0 8px 24px #00000012}
+.head{background:#166534;color:#fff;border-radius:14px;padding:22px;text-align:center}
+.notice{background:#FEF3C7;border:1px solid #F59E0B;color:#92400E;padding:15px;border-radius:12px;margin:18px 0}
+.notice h3{margin:0 0 8px}
+.format{background:#EFF6FF;border:1px solid #2563EB;color:#1E40AF;padding:15px;border-radius:12px;margin:18px 0}
+.format h3{margin:0 0 8px;color:#1D4ED8}
+.format table{margin-top:10px}
+.search{display:flex;gap:10px;margin:20px 0}
+.search input{flex:1;padding:13px;border:1px solid #d1d5db;border-radius:10px;font-size:16px}
+.search button{padding:13px 20px;border:0;border-radius:10px;background:#166534;color:#fff;font-weight:700;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.stat{background:#f8fafc;border-radius:12px;padding:15px;text-align:center}
+.stat b{display:block;font-size:24px;margin-bottom:5px}
+table{width:100%;border-collapse:collapse;margin-top:18px}
+th,td{padding:11px;border-bottom:1px solid #e5e7eb;text-align:center}
+th{background:#f0fdf4}
+.muted{color:#6b7280}
+.err{text-align:center;color:#b91c1c;font-weight:700}
+@media(max-width:600px){.search{flex-direction:column}.grid{grid-template-columns:1fr}.wrap{margin:10px auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="head">
+<h1>RESULTS 2 SEM ONLY</h1>
+<p>MBA Semester 2 Student Result Portal</p>
+</div>
+
+<div class="notice">
+<h3>⚠ Important Notice</h3>
+<div>This result portal is <b>NOT an official VTU website</b>.</div>
+<div>The marks, ranks, total score, and percentage shown here are for reference only and may not be accurate.</div>
+<div>Please verify the result on the <b>official VTU University website</b> before using it for academic or legal purposes.</div>
+</div>
+
+<div class="format">
+<h3>🔍 USN Search Format</h3>
+<p>Enter only the last 2 or 3 digits of the USN, or enter the full USN.</p>
+<table>
+<tr><th>Official USN</th><th>Enter</th></tr>
+<tr><td>2BL25BA001</td><td><b>001</b> or <b>01</b></td></tr>
+<tr><td>2BL25BA012</td><td><b>012</b> or <b>12</b></td></tr>
+<tr><td>2BL25BA030</td><td><b>030</b> or <b>30</b></td></tr>
+<tr><td>2BL25BA047</td><td><b>047</b> or <b>47</b></td></tr>
+</table>
+<p><b>Example:</b> 2BL25BA047 → Enter <b>047</b> or <b>47</b></p>
+</div>
+
+<div class="search">
+<input id="q" inputmode="numeric" placeholder="Enter 047 or 47" onkeydown="if(event.key==='Enter')findStudent()">
+<button onclick="findStudent()">Search</button>
+</div>
+<div id="out" class="muted">Enter your USN number to view the result.</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
