@@ -36,6 +36,10 @@ th{background:#f0fdf4}
 <p>MBA Semester 2 Student Result Portal</p>
 </div>
 
+<div class="search" style="margin-top:20px;">
+<input id="q" inputmode="numeric" maxlength="2" placeholder="🔍 ENTER LAST 2 DIGITS ONLY (01–30)" onkeydown="if(event.key==='Enter')findStudent()">
+<button onclick="findStudent()">SEARCH</button>
+</div>
 <div class="notice">
 <h3>⚠ Important Notice</h3>
 <div>This result portal is <b>NOT an official VTU website</b>.</div>
@@ -50,10 +54,6 @@ th{background:#f0fdf4}
 <p>Search accepts values from <b>01 to 30</b>.</p>
 </div>
 
-<div class="search">
-<input id="q" inputmode="numeric" placeholder="ENTER LAST 2 DIGITS ONLY (e.g. 47)" onkeydown="if(event.key==='Enter')findStudent()">
-<button onclick="findStudent()">Search</button>
-</div>
 <div id="out" class="muted">Enter your USN number to view the result.</div>
 </div>
 </div>
